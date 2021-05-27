@@ -1,0 +1,36 @@
+{
+    "deno.enable": true,
+    "deno.lint": true,
+    "deno.suggest.autoImports": true,
+    "deno.suggest.paths": true,
+    "deno.codeLens.references": true,
+	"deno.suggest.names": true,
+	"deno.suggest.completeFunctionCalls": true,
+	"deno.suggest.imports.hosts": {},
+	"deno.codeLens.implementations": true,
+    "deno.unstable": true,
+    "deno.importMap": "./import_map.json",
+    "eslint.format.enable": false,
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixAll.eslint": false,
+		"source.organizeImports": false,
+    },
+	"typescript.format.enable": false,
+	"typescript.suggest.enabled": false,
+	"typescript.suggest.autoImports": false,
+	"typescript.validate.enable": false,
+	"[typescript]": {
+		"editor.defaultFormatter": "denoland.vscode-deno",
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "denoland.vscode-deno"
+	},
+    "eslint.enable": false,
+    "cSpell.words": [
+        "axiod",
+        "djwt",
+        "msal"
+    ],
+}

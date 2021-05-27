@@ -1,0 +1,17 @@
+on:
+  schedule:
+    - cron: "0 0 1 * *" # run depsbot on the first of every month at 00:00 UTC
+  push:
+  pull_request: # but also check on push and pull requests
+
+jobs:
+  depsbot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@master
+
+      - name: Run depsbot
+        uses: denosaurs/depsbot@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,13 @@
+{
+    "imports": {
+        "djwt": "https://deno.land/x/djwt@v2.2/mod.ts",
+        "crypto": "https://deno.land/std@0.97.0/node/crypto.ts",
+        "uuidStd": "https://deno.land/std@0.97.0/uuid/mod.ts",
+        "axios": "https://deno.land/x/axiod@0.20.0-0/mod.ts",
+		"buffer": "https://deno.land/std@0.97.0/node/buffer.ts",
+        "uuid": "./mod.aliases/uuid.ts",
+		"process":"https://deno.land/std@0.97.0/node/process.ts",
+        "jsonwebtoken": "./mod.aliases/jsonwebtoken.ts",
+        "@azure/msal-node": "./msal-node/custom-build/dist/index.js"
+    }
+}
