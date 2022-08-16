@@ -4972,9 +4972,9 @@ function nextTick1(cb, ...args2) {
 }
 const pid1 = Deno.pid;
 const platform1 = Deno.build.os === "windows" ? "win32" : Deno.build.os;
-const version1 = `v${Deno.version.deno}`;
+const version1 = `v${Deno.version?.deno}`;
 const versions1 = {
-    node: Deno.version.deno,
+    node: Deno.version?.deno,
     ...Deno.version
 };
 class Process extends __default {
